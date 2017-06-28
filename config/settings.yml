@@ -1,0 +1,8 @@
+posts:
+  tag:
+    maximum: 50
+  title:
+    maximum: 140
+user:
+  full_name:
+    max_length: 50
