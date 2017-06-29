@@ -24,3 +24,25 @@ en:
   helpers:
     application:
       app: "Framgia Project 2"
+  shared:
+    sign_up:
+      sign_up: "Sign up"
+      char_min: "characters minimum"
+    sign_in:
+      login: "Log in"
+    signin:
+      title_login_form: "Fancy Login / Registration form"
+      signin: "Sign In"
+      join_us: "Join us!"
+      email_address: "Email Address"
+      password: "Password"
+      forget_password: "Forgot Password?"
+      signin_with: "- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - "
+      facebook: "Facebook"
+      google: "Google+"
+      twitter: "Twitter"
+      full_name: "Full name"
+      join-now: "Join now"
+      by_click: "By clicking Join now, you agree to hifriends's User Agreement, Privacy Policy, and Cookie Policy."
+      register: "- - - - - - - - - - - - - Register With - - - - - - - - - - - - - "
+
