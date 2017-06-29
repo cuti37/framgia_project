@@ -4,17 +4,24 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+gem "bootstrap-sass"
 gem "coffee-rails", "~> 4.2"
+gem "config"
+gem "devise"
+gem "faker"
+gem "font-awesome-rails", "4.7.0.2"
+gem "i18n-js", "3.0.0"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails", "4.3.1"
 gem "puma", "~> 3.7"
 gem "rails", "~> 5.1.2"
+gem "rspec-html-matchers"
 gem "sass-rails", "~> 5.0"
 gem "sqlite3"
+gem "toastr-rails", "1.0.3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
-gem "devise"
-gem "config"
-
 
 group :development, :test do
   gem "autoprefixer-rails"
