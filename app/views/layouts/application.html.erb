@@ -3,13 +3,25 @@
   <head>
     <title>FramgiaProject</title>
     <%= csrf_meta_tags %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   </head>
 
   <body>
-    <%= yield %>
+  <%= render "layouts/header" %>
+  <%= render "layouts/nav" %>
+  <section>
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8">
+        <%= yield %>
+      </div>
+      <div class="col-md-4">
+        <%= render "layouts/default_friends" %>
+      </div>
+      </div>
+    </div>
+  </section>
+  <%= render "layouts/footer" %>
   </body>
 </html>

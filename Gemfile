@@ -14,7 +14,13 @@ gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "devise"
 gem "config"
-
+gem "bootstrap-kaminari-views", "0.0.5"
+gem "bootstrap-sass", "3.3.7"
+gem "jquery-rails", "4.3.1"
+gem "i18n-js", "3.0.0"
+gem "font-awesome-rails", "4.7.0.2"
+gem "toastr-rails", "1.0.3"
+gem "rspec-html-matchers"
 
 group :development, :test do
   gem "autoprefixer-rails"
