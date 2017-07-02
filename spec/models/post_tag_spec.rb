@@ -9,8 +9,8 @@ RSpec.describe PostTag, type: :model do
   end
   context "validates" do
     it do
-      is_expected.to validate_presence_of :post_id
-      is_expected.to validate_presence_of :post_id
+      is_expected.to validate_presence_of :post
+      is_expected.to validate_presence_of :tag
     end
   end
 end
