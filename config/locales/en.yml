@@ -7,6 +7,7 @@ en:
       password: "Password"
       sign_in: "Sign in"
       remember_me: "Remember me"
+      enter_email: "Enter email"
     nav:
       home: "Home"
       members: "Members"
@@ -20,3 +21,12 @@ en:
       static_home: "StaticPages#home"
       find_file_home: "Find me in app/views/static_pages/home.html.erb"
       home: "Home"
+  helpers:
+    application:
+      app: "Framgia Project 2"
+  shared:
+    sign_up:
+      sign_up: "Sign up"
+      char_min: "characters minimum"
+    sign_in:
+      login: "Log in"

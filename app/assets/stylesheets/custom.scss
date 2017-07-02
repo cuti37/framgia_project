@@ -75,6 +75,10 @@ header {
   margin: 5px;
 }
 
+.comment-form input [type='text'] {
+  width: 100%;
+}
+
 .comment-form .form-group {
   width: 90%;
 }
@@ -85,10 +89,6 @@ header {
   margin: 5px 0;
   overflow: auto;
   padding: 3px;
-  width: 100%;
-}
-
-.comment-form input [type='text'] {
   width: 100%;
 }
 
