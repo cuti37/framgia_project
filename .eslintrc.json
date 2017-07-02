@@ -4,7 +4,9 @@
     "jquery": true
   },
   "globals": {
-    "window": true
+    "window": true,
+    "custom_toastr": true,
+    "toastr": true
   },
 
   "extends": "eslint:recommended",
