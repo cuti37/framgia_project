@@ -1,0 +1,10 @@
+$blue-light-1: #04519b;
+$blue-light-2: #044687;
+$blue-light-3: #033769;
+$gray: #ccc;
+$white-2: #f4f4f4;
+$white: #fff;
+
+@mixin color($value, $content: '') {
+  color: $value $content;
+}
