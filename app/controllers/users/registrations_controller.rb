@@ -1,16 +1,22 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-
   # GET /resource/sign_up
   # def new
   #   super
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    user = User.new sign_up_params
+
+    if user.save
+      sign_up(user, resource)
+      render json: {status: :success, location: "#{after_update_path_for user}"}
+    else
+      render json: {status: :error, message: user.errors.full_messages}
+    end
+  end
 
   # GET /resource/edit
   # def edit

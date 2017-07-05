@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "bootstrap-sass"
+gem "bootstrap-will_paginate"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "devise"
@@ -22,6 +23,7 @@ gem "sqlite3"
 gem "toastr-rails", "1.0.3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "will_paginate"
 
 group :development, :test do
   gem "autoprefixer-rails"

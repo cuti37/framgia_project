@@ -4,24 +4,29 @@ $(document).ready(function() {
     event.preventDefault();
     var form = $(this);
     var params = form.serialize();
-    $.ajax({
-      url: form.attr('action'),
-      type: 'post',
-      dataType: 'json',
-      data: params,
-    })
-      .done(function(response) {
-        if (response.status == 'success') {
-          custom_toastr('success',response.message);
-          location.href = "/";
-        }else{
-          custom_toastr('error',response.message);
-        }
+    var email = $('#user_email').val();
+    if ('' == email) {
+      custom_toastr('warning', 'Cannot insert blank!');
+    } else {
+      $.ajax({
+        url: form.attr('action'),
+        type: 'post',
+        dataType: 'json',
+        data: params,
       })
-      .fail(function() {
-      })
-      .always(function() {
-      });
+        .done(function(response) {
+          if (response.status == 'success') {
+            custom_toastr('success',response.message);
+            location.href = '/';
+          }else{
+            custom_toastr('error',response.message);
+          }
+        })
+        .fail(function() {
+        })
+        .always(function() {
+        });
+    }
     return false;
   });
 
@@ -37,10 +42,12 @@ $(document).ready(function() {
     })
       .done(function(response) {
         if (response.status == 'success') {
-          custom_toastr('success',response.message);
+          custom_toastr('success','ok');
           location.href = response.location;
         }else{
-          custom_toastr('error',response.message);
+          $.each(response.message, function(index, val) {
+            custom_toastr('error',val);
+          });
         }
       })
       .fail(function() {
