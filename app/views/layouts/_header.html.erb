@@ -2,6 +2,7 @@
   <div class="container">
     <%= image_tag "logo.png" %>
     <% unless user_signed_in? %>
+    <input type="button" value="Login" id="login_modal">
       <%= link_to t(".log_in"),"#", id: "login_modal"  %>
       <%= link_to t(".sign_up"),"#", id: "signup_modal"  %>
     <% else %>

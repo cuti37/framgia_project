@@ -24,7 +24,9 @@ function toastr_opptions() {
     'positionClass': 'toast-bottom-right'
   };
 }
-jQuery(document).ready(function($) {
+
+$(document).on('turbolinks:load', function(){
+  jQuery(document).ready(function($) {
   $('#login_modal').on('click', function(event) {
     event.preventDefault();
     $('#login').modal();
@@ -35,3 +37,5 @@ jQuery(document).ready(function($) {
   });
   return false;
 });
+});
+
