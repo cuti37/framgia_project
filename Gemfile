@@ -11,6 +11,9 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "devise"
 gem "faker"
+gem "carrierwave", "1.1.0"
+gem "mini_magick", "4.7.0"
+gem "fog", "1.40.0"
 gem "font-awesome-rails", "4.7.0.2"
 gem "i18n-js", "3.0.0"
 gem "jbuilder", "~> 2.5"
@@ -24,6 +27,7 @@ gem "toastr-rails", "1.0.3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "will_paginate"
+
 
 group :development, :test do
   gem "autoprefixer-rails"

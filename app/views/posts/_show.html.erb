@@ -6,6 +6,7 @@
         </div>
         <div class="modal-body">
           <p id="show-content"><%= post.content %></p>
+          <%= image_tag post.picture.url if post.picture? %>
         </div>
     </div>
   </div>

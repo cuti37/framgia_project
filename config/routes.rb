@@ -10,5 +10,5 @@ Rails.application.routes.draw do
     registrations: "users/registrations"
   }
 
-  resources :posts, only: [:new, :create, :destroy, :show]
+  resources :posts
 end
