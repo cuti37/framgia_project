@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <h2><%= t ".title_login_form" %></h2>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="form-body">
+        <ul class="nav nav-tabs final-login">
+            <li class="active"><a data-toggle="tab" href="#sectionA"><%= t ".singin" %></a></li>
+            <li><a data-toggle="tab" href="#sectionB"><%= t ".join_us" %></a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="sectionA" class="tab-pane fade in active">
+          <div class="innter-form">
+            <form class="sa-innate-form" method="post">
+              <label><%= t ".email_address" %></label>
+              <input type="text" name="username">
+              <label><%= t ".password" %></label>
+              <input type="password" name="password">
+              <button type="submit"><%= t ".singin" %></button>
+              <a href=""><%= t ".forget_password" %></a>
+            </form>
+          </div>
+          <div class="social-login">
+          <p><%= t ".signin_with" %></p>
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i> <%= t ".facebook" %></a></li>
+            <li><a href=""><i class="fa fa-google-plus"></i> <%= t ".goole" %></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i> <%= t ".twitter" %></a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          <div id="sectionB" class="tab-pane fade">
+            <div class="innter-form">
+              <form class="sa-innate-form" method="post">
+                <label><%= t ".full_name" %></label>
+                <input type="text" name="username">
+                <label><%= t ".email_address" %></label>
+                <input type="text" name="username">
+                <label><%= t ".password" %></label>
+                <input type="password" name="password">
+                <button type="submit"><%= t ".join-now" %></button>
+                <p><%= t ".by_click" %></p>
+              </form>
+            </div>
+            <div class="social-login">
+              <p><%= t ".register" %></p>
+              <ul>
+                <li><a href=""><i class="fa fa-facebook"></i> <%= t ".facebook" %></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i> <%= t ".goole" %></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i> <%= t ".twitter" %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
