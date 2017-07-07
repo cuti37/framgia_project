@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function(event) {
+$(document).on('turbolinks:load', function() {
 
   $(document).ready(function() {
 
@@ -23,7 +23,6 @@ $(document).on('turbolinks:load', function(event) {
               location.href = '/';
             }else{
               custom_toastr('error',response.message);
-              reset_form(form);
             }
           })
           .fail(function() {

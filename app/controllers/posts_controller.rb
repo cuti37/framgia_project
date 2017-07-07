@@ -4,26 +4,29 @@ class PostsController < ApplicationController
   before_action :post_load, except: [:new, :create]
 
   def show
-      render json: {status: :success, html: render_to_string(partial: "posts/show", locals: {post: @post},  layout: false)}
+    render json: {status: :success, html: render_to_string(partial: "posts/show", locals: {post: @post}, layout: false)}
   end
 
   def create
     @post = current_user.posts.build post_params
 
     if @post.save
-      render json: {status: :success, res: render_to_string(partial: "posts/post", locals: {post: @post}, layout: false)}
+      render json: {status: :success, res: render_to_string(partial: "posts/post",
+        locals: {post: @post}, layout: false)}
     else
       render json: {status: :error, res: @post.errors.full_messages}
     end
   end
 
   def edit
-    render json: {status: :success, html: render_to_string(partial: "posts/post_form", locals: {post: @post},  layout: false)}
+    render json: {status: :success, html: render_to_string(partial: "posts/post_form",
+      locals: {post: @post}, layout: false)}
   end
 
   def update
     if @post.update_attributes post_params
-      render json: {status: :success, res: render_to_string(partial: "posts/post", locals: {post: @post}, layout: false), post_id: @post.id}
+      render json: {status: :success, res: render_to_string(partial: "posts/post",
+        locals: {post: @post}, layout: false), post_id: @post.id}
     else
       render json: {status: :error, res: @post.errors.full_messages}
     end

@@ -30,3 +30,7 @@ en:
       char_min: "characters minimum"
     sign_in:
       login: "Log in"
+  devise:
+    registrations:
+      edit:
+        current_waiting: "Currently waiting confirmation for:"

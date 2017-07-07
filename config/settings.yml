@@ -1,8 +1,10 @@
 posts:
   tag:
-    maximum: 50
+    max_length: 50
   title:
-    maximum: 140
+    length_title: 140
+  max_post: 10
 user:
   full_name:
     max_length: 50
+

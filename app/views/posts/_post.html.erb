@@ -14,7 +14,7 @@
             </div>
             <div class="pointer-border"></div>
           </div>
-          <% if user_signed_in? && post.user == current_user%>
+          <% if can? :update, post %>
           <p class="post-actions"> <%= link_to "Edit", edit_post_path(post), class: "edit-post", data: {id: post.id}  %> - <%= link_to "Delete", post, class: "delete-post", data: {id: post.id}  %></a> - <a href="#">Follow</a> - <a href="#">Share</a></p>
             <div class="comment-form">
               <form class="form-inline">

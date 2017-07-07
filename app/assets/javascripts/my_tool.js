@@ -27,15 +27,15 @@ function toastr_opptions() {
 
 $(document).on('turbolinks:load', function(){
   jQuery(document).ready(function($) {
-  $('#login_modal').on('click', function(event) {
-    event.preventDefault();
-    $('#login').modal();
+    $('#login_modal').on('click', function(event) {
+      event.preventDefault();
+      $('#login').modal();
+    });
+    $('#signup_modal').on('click', function(event) {
+      event.preventDefault();
+      $('#signup').modal();
+    });
+    return false;
   });
-  $('#signup_modal').on('click', function(event) {
-    event.preventDefault();
-    $('#signup').modal();
-  });
-  return false;
-});
 });
 
